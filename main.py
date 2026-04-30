@@ -1,20 +1,17 @@
-balance = 1000
+# Function to add two numbers
+def add(x, y):
+    return x + y
 
-while True:
-    print(f"\nBalance:${balance}")
-    action = input("Type 'w' to withdraw, 'd' to deposit, or 'q' to exit: ").lower()
-    
-    if action == 'q':
-        break
-    
-    if action in ['w', 'd']:
-        amount = float(input("Enter amount:$ "))
-        if action == 'w':
-            if amount > balance:
-                print("You cant take your bank balance to negative duh!")
-            else:
-                balance -= amount
-        elif action == 'd':
-            balance += amount
-    else:
-        print("Invalid command!")
+# Function to subtract two numbers
+def subtract(x, y):
+    return x - y
+
+# Function to multiply two numbers
+def multiply(x, y):
+    return x * y
+
+# Function to divide two numbers
+def divide(x, y):
+    if y == 0:
+        return "Error! Division by zero."
+    return x / y
